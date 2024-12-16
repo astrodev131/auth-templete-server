@@ -1,12 +1,8 @@
-const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 const morgan = require("morgan");
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
 const errorMiddleware = require("./middlewares/errorMiddleware");
-
-const app = express();
 
 // Middleware
 app.use(cors());
